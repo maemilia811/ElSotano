@@ -1,0 +1,57 @@
+{% extends 'core/base.html' %} <!--Hereda de la plantilla base-->
+
+{% block title %} 
+Nosotros
+{% endblock %}
+
+
+{% block content %} <!--Sobreescribe el bloque content de la plantilla base-->
+
+<main class="mainNosotros">
+    <div>
+        <h1>¿Quienes somos?</h1>
+        <p> Nuestro establecimiento,fundado en 1995, se ha asegurado de ofrecer a nuestros clientes una excelente atención, así como tambien un espacio para eventos, reuniones y más.
+            Nuestros tragos han sido elogiados y recomendados por gran parte de la Argentina.
+            Nuestro objetivo es brindarle a nuestros clientes una experiencia única, con sabores y aromas que no se olvidan.
+        </p>
+        <h2>Nuestra misión con nuestro Emprendimiento</h2>
+        <p>Nuestra misión es proporcionar a nuestros clientes una experiencia única en la degustación de tragos, donde cada visita se convierta en un momento inolvidable de exclusividad y disfrute. Nos esforzamos por crear un ambiente acogedor y sofisticado, 
+            donde nuestros clientes puedan sumergirse en un mundo de sabores y aromas cautivadores.</p>
+    </div>
+     <div>
+        <p>El lugar que hemos elegido, esta perfecta y estratégicamente ubicado para que todas las personas tengan la oportunidad de vivir una experiencia única</p>
+        <h2>Las reseñas que nos dejado</h2>
+    </div>
+    <div id="Caja-reseñas">
+        <ul id="lista-reseñas">
+            <li>
+                <div class="casillas-comentarios">
+                    <h3>Mariana S.:</h3>
+                    <p>"Visitar El Sótano fue una experiencia excepcional. Desde el momento en que entré, fui recibida con una atención personalizada y cálida. Los tragos que probé eran una verdadera obra de arte, llenos de sabores y combinaciones únicas. El ambiente era íntimo y elegante, lo que me hizo sentir como si estuviera en un lugar exclusivo. Sin duda, uno de los mejores bares que he visitado. ¡Volveré pronto!"</p>
+                </div>
+            </li>
+            <li>
+                <div class="casillas-comentarios">
+                    <h3>Roberto G.:</h3>
+                    <p>"Si buscas una experiencia de degustación de tragos única, El Sótano es el lugar indicado. La selección de licores es impresionante y los mixólogos realmente saben lo que hacen. Me sorprendieron con combinaciones y presentaciones innovadoras. Además, el personal es muy atento y conocedor, siempre dispuesto a ayudarte a elegir el trago perfecto según tus preferencias. Una experiencia inolvidable y totalmente recomendada."</p>
+                </div>
+            </li>
+            <li>
+                <div class="casillas-comentarios">
+                    <h3>Alejandro R.:</h3>
+                    <p>"En El Sótano encontré lo que estaba buscando: una experiencia de degustación de tragos exclusiva y de alta calidad. 
+                        Los tragos eran verdaderas obras maestras, preparados con ingredientes frescos y de primera categoría. La atención al detalle
+                        y el conocimiento del equipo de bartenders eran impresionantes. Sin duda, es un lugar perfecto para disfrutar de tragos exquisitos en un ambiente elegante y acogedor. ¡No puedo esperar para volver y probar más creaciones!"</p>
+                </div>
+            </li>
+        </ul>
+        <div>
+            <textarea name="" id="crear-comentario" cols="90" rows="9" placeholder="Dejanos tu comentario..."></textarea>
+            <div>
+                <button class="boton" type="submit">Enviar </button>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends 'core/base.html' %}
+
+{% block title %} 
+Contacto
+{% endblock %}
+
+{% block content %} 
+<main class="mainContacto">
+    <h3 class="titulo">Consultas</h4>
+    <section class="form">
+        {% load static %}
+        <form  onsubmit="return validateForm()" >    
+            <div>
+                <label for="nombre" class="texto">Nombre:</label>
+                <input class="casillas" type="text"  id="nombre" name="nombre">
+            </div>
+            <div>
+                <label for="celular" class="texto" >Celular:</label>
+                <input class="casillas" type="celular" id="celular" name="celular">
+            </div>
+            <div>    
+                <label for="email" class="texto">Email:</label>
+                <input class="casillas"  type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="mensaje" class="texto" >Mensaje:</label>
+                <textarea class="casillas" id="mensaje" name="mensaje" rows="4" cols="30"></textarea>
+            </div>
+            
+            <input class="button" type="submit" value="Enviar">
+        </form>
+    </section>
+    <div class="datos">
+        <h3 class="subtitulo">Datos</h3>
+        {% load static%}
+        <a href="https://www.whatsapp.com/"><img src="{% static 'img/whatsapp.png' %}" width="20" height="20">  +54911123456789</img></a>
+        <a href="https://www.instagram.com/"><img src="{% static 'img/instagram.ico' %}" width="20" height="20">  elsotanobar</img></a>
+        <a href="https://www.gmail.com/">elsotanobar@gmail.com</a>
+    </div>
+</main>
+<script src="{% static 'contacto.js' %}"></script>
+
+{% endblock %}

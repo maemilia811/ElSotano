@@ -1,0 +1,453 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    font-family: 'Charm', cursive;
+}
+
+@media (max-width: 576px){
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .cajaComidas{
+        width: 94%;
+    }
+    #logo{
+        height: 60px;
+        width: 60px;
+    }
+    .navbar{
+        font-size: 40px;
+        display: block;
+        align-content: center;
+        margin:auto;
+    }
+    .navbar li{
+        display: block;
+    }
+    .pagCarta{
+        width: 96%;
+    }
+    .ubicacion{
+        width: 96%;
+    }
+    .form>form>div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 96%;
+    }
+    .casillas{
+        width: 95%;
+    }
+    footer li{
+        display: block;
+    }
+    footer{
+        font-size: 35px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 576px){
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .pagCarta{
+        width: 96%;
+    }
+    .ubicacion{
+        width: 96%;
+    }
+    #logo{
+        height: 6vw;
+        width: 6vw;
+    }
+    .navbar{
+        font-size: 4vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+    }
+    .navbar li{
+        display: inline;
+    }
+    .form>form>div{
+        width: 85%;
+    }
+    .casillas{
+        width: 75%;
+    }
+    footer li{
+        display: inline;
+    }
+    footer{
+        font-size: 3vw;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 768px ){
+    .cajaComidas{
+        width: 47%;
+    }
+    .pagCarta{
+        width: 46%;
+    }
+    .ubicacion{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-content: center;
+        width: 96%;
+    }
+    .form>form>div{
+        width: 70%;
+    }
+}
+
+@media (min-width: 1200px){
+    .navbar{
+        font-size: 50px;
+    }
+    .cajaComidas{
+        width: 31%;
+    }
+    .ubicacion{
+        width: 46%;
+    }
+    .form>form>div{
+        width: 50%;
+    }
+    footer{
+        font-size: 4vw;
+    }
+}
+
+body, header, main, footer{
+    margin: 0px;
+    padding: 3px;
+    background-color: black;
+}
+
+header{
+    background-color: rgba(86, 21, 21, 0.4);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
+}
+
+#logo{
+    display: inline-block;
+}
+
+.cajaLogo{
+    display: inline;
+    margin: auto;
+}
+
+.navbar{
+    margin:auto;
+    opacity: 1;
+}
+
+.navbar a{
+    font-family: 'Tangerine', cursive;
+    text-decoration: none;
+    color: antiquewhite;
+    font-weight: bold;
+}
+
+main{
+    color: antiquewhite;
+    align-content: center;
+    width: 100%;
+}
+
+#seccion1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    background-image: url(https://demos.coderplace.com/wp/WP02/WP02035/wp-content/uploads/2022/05/blog02.jpg);
+    min-height: 50vw;
+    background-size: 170%;
+    background-position: center;
+    color: antiquewhite;
+    animation-duration: 1s;
+}
+
+#seccion1 h2{
+    font-family: 'Tangerine', cursive;
+    background-color: black;
+    opacity: 0.7;
+    font-size: 10vw;
+    margin: auto;
+    text-align: center;
+}
+
+#seccionMenu{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    color: black;
+    background-color: black;
+    background-size: 125%;
+}
+
+.imgComidas{
+    height: auto;
+    width: 90%;
+    margin: auto;
+}
+
+.cajaComidas{
+    margin: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    border-radius: 5px;
+}
+
+.cajaComidas h2{
+    font-size: 25px;
+}
+
+.cajaComidas p{
+    font-size: 18px;
+}
+
+footer{
+    justify-content: space-between;
+    align-content: center;
+    background-color: rgba(86, 21, 21, 0.4);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
+}
+
+footer>ul{
+    margin: auto;
+}
+
+footer a{
+    font-family: 'Tangerine', cursive;
+    text-decoration: none;
+    color: antiquewhite;
+    font-weight: bold;
+    display: inline;
+}
+
+#seccion3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    margin: 0px;
+    background-image:url(https://demos.coderplace.com/wp/WP02/WP02035/wp-content/uploads/2021/12/blog06.jpg);
+    background-position: center;
+    color: antiquewhite;
+}
+
+#seccion4{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    margin: 0px;
+    background-image: url(https://demos.coderplace.com/wp/WP02/WP02035/wp-content/uploads/2022/05/blog01.jpg);   
+    background-position: center;
+    color: antiquewhite;
+}
+
+.pagCarta{
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+#weatherParagraph{
+    font-size: 2.5vw;
+    color: antiquewhite;
+    text-align: right;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.mainSucursales h1{
+    margin: 30px;
+    text-align: center;
+    font-size: 60px;
+}
+
+.mainSucursales section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    background-color: black;
+    
+}
+
+.ubicacion{
+    background-color: rgba(0, 0, 0, 0.85);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
+    margin: 5px;
+    text-align: center;
+    vertical-align: auto;
+}
+
+.ubicacion>div{
+    margin: auto;
+}
+
+.ubicacion h3{
+    margin: 5px;
+}
+.ubicacion p{
+    margin: 5px;
+}
+
+.map{
+    height: 250px;
+    width: 250px;
+    border-radius: 15px;
+}
+
+.mainNosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#crear-comentario{
+    background-color: rgb(54, 52, 52);
+    border-radius: 15px;
+    border-style: double;
+    color: aliceblue;
+    width: 98%;
+}
+
+.casillas-comentarios{
+    background-color: rgba(86, 21, 21, 0.8);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
+    color: antiquewhite;
+    border-style: double;
+    width: 98%;    
+}
+
+#lista-reseñas li{
+    list-style: none;
+}
+
+.mainContacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    background-color:black;
+    height: auto;
+    width: 94%;
+    margin: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: rgba(86, 21, 21, 0.4);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
+}
+
+.form>form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw;
+}
+
+.form>form>div{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.datos {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:94%;
+    margin: 10px;
+    padding-bottom: 50px;
+    background-color: rgba(86, 21, 21, 0.4);
+    border: 3px rgba(167, 166, 163, 0.452) solid;
+    border-radius: 15px;
+    font-size: 100%;
+    color: antiquewhite;
+    text-align: center;
+
+}
+
+.datos a{
+    font-size: 25px;
+    text-decoration: none;
+    color: antiquewhite;
+}
+
+.titulo{
+    font-size: 60px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.subtitulo{
+    font-size: 40px;
+    margin: 30px;
+}
+
+.texto{
+    text-align: center;
+    font-size: 30px;
+}
+
+.button{
+    display: flex;
+    font-size: 18px;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+}
+
+.casillas{
+    height: 40px;
+    font-size: 25px;
+    text-align: start;
+    border-radius: 7px;
+}
+
+#mensaje{
+    height: 120px;
+}
