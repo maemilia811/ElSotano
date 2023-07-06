@@ -17,10 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from core import views
+from carta import views as carta_views
+
 from django.conf import settings
 
 urlpatterns = [
-    path('', views.home, name= "home"),
+    path('', carta_views.home, name= "home"),
     path('nosotros/', views.nosotros, name= "nosotros"),
     path('sucursales/', views.sucursales, name= "sucursales"),
     path('contacto/', views.contacto, name= "contacto"),

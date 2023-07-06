@@ -1,0 +1,27 @@
+{% extends 'core/base.html' %} 
+
+{% block title %} 
+Inicio
+{% endblock %}
+
+
+{% block content %} 
+<main class="mainIndex">
+    <section class="animate__animated animate__backInUp" id="seccion1">
+        <h2>El Sótano Bar</h2>
+    </section>
+    <p style="color: black;">{{ drinks }}</p>
+    <section class="animate__animated animate__backInUp" id="seccionMenu">
+            {% for drink in drinks %}
+        <article class="cajaComidas">
+            <img src={{drink.image.url}} alt="Foto de {{drink.name}}" class="imgComidas">
+            <div>
+                <h3>{{drink.name}}</h3>
+            </div>
+        </article>
+            {% endfor %}
+    </section>
+</main>
+
+
+{% endblock %}
